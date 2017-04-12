@@ -1,0 +1,12 @@
+<div ng-controller="loginController">
+<p><button><a href="#!/dashboard">Cancel</a></button>
+<h1>Put the question and options here:</h1>
+<form>
+    <p>Question: <textarea rows="3" cols="40" required minlength="8" ng-model="newPoll.question"></textarea></p>
+    <p>Option 1: <input type="text" minlength="3" required ng-model="newPoll.optionUno"></input></p>
+    <p>Option 2: <input type="text" minlength="3" required ng-model="newPoll.optionDos"></input></p>
+    <p>Option 3: <input type="text" minlength="3" required ng-model="newPoll.optionTres"></input></p>
+    <p>Option 4: <input type="text" minlength="3" required ng-model="newPoll.optionCuatro"></input></p>
+    <p><input type="submit" value="Create Poll" ng-click="addPoll()"></p>
+</form>
+</div>

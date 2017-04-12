@@ -1,0 +1,26 @@
+<div ng-controller="loginController">
+<p><button><a href="#!/newPoll">Create a New Poll</a></button></p>
+<p><input type="submit" value="Log Out" ng-click="logout()"></p>
+<h1>Welcome {{cookies.name}}!</h1>
+<h2>Current Polls:</h2>
+<input type="text" ng-model="searchBox">
+<input type="submit" value="Search" ng-click()="Search">
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Survey Question</th>
+    <th>Date Posted</th>
+    <th>Action</th>
+  </tr>
+  <tr ng-repeat = "poll in polls | filter: searchBox">
+    <td>{{poll.name}}</td>
+    <td><a href="#!/poll/{{poll._id}}">{{poll.question}}</a></td>
+    <td>{{poll.createdAt | date:'longDate'}}</td>
+    <td>
+        <div ng-if="poll.name == cookies.name">
+            <input type="submit" value="Delete" ng-click="delete(poll._id)">
+        </div>
+    </td>
+  </tr>
+</table>
+</div>

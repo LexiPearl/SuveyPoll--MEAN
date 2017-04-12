@@ -1,0 +1,22 @@
+{
+  "name": "projectThree",
+  "description": "",
+  "main": "server.js",
+  "authors": [
+    "Lexi Pearlstein <lexipearl91@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/LexiPearl/",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-cookies": "^1.6.4",
+    "angular-route": "^1.6.4",
+    "angular": "^1.6.4"
+  }
+}
